@@ -1,0 +1,38 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: install java dependency
+      command: amazon-linux-extras install java-openjdk11 -y
+
+    - name: download tomcat apache tar file
+      get_url:
+        url: "https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz"
+        dest: "/root"
+
+
+    - name: untar the file
+      command: tar -zxvf apache-tomcat-9.0.85.tar.gz
+
+    - name: rename the file
+      command: mv apache-tomcat-9.0.85  tomcat
+      tags: flm  
+
+
+    - name: copy the context.txt
+      copy:
+        src: "context.xml"
+        dest: "/root/tomcat/webapps/manager/META_INF/context.xml"
+
+    - name: replcae the tomcat-user.xml file
+      copy:
+        src: "tomcat-users.xml"    
+        dest: "/root/tomcat/conf/tomcat-users.xml"      
+   
+
+    - name: stop  the tomcat
+      shell: nohup /root/tomcat/bin/shutdown.sh
+
+    - name: start the tomcat
+      shell: nohup /root/tomcat/bin/startup.sh

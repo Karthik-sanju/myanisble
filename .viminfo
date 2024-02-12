@@ -15,7 +15,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1707711784,,"wq!"
+|2,0,1707718641,,"wq!"
 :qa
 |2,0,1707705972,,"qa"
 :38
@@ -32,247 +32,338 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	#
-|3,0,0,0,1,0,1707705947,"#"
-"1	LINE	0
-	        - nginx
-|3,0,1,1,1,0,1707708891,"        - nginx"
+"0	LINE	0
+	  <role rolename="tomcat"/>
+	  <role rolename="role1"/>
+	  <user username="tomcat" password="<must-be-changed>" roles="tomcat"/>
+|3,0,0,1,3,0,1707715053,"  <role rolename=\"tomcat\"/>","  <role rolename=\"role1\"/>","  <user username=\"tomcat\" password=\"<must-be-changed>\" roles=\"tomcat\"/>"
+""1	LINE	0
+	
+	    
+|3,1,1,1,2,0,1707715656,"","    "
 "2	LINE	0
-	        - httpd
-|3,0,2,1,1,0,1707708598,"        - httpd"
+	
+|3,0,2,1,1,0,1707715650,""
 "3	LINE	0
-	        
-|3,0,3,1,1,0,1707708596,"        "
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1707710407," "
+	      shell: nohup /root/tomcat/bin/startup.sh
+|3,0,3,1,1,0,1707715645,"      shell: nohup /root/tomcat/bin/startup.sh"
+"4	LINE	0
+	    - name: start the tomcat
+|3,0,4,1,1,0,1707715644,"    - name: start the tomcat"
+"5	LINE	0
+	    - name: start the tomcat
+	    - name: copy ht conyext.gilr
+|3,0,5,1,2,0,1707715636,"    - name: start the tomcat","    - name: copy ht conyext.gilr"
+"6	LINE	0
+	    
+|3,0,6,1,1,0,1707715633,"    "
+"7	LINE	0
+	      shell: nohup /root/tomcat/bin/startup.sh
+|3,0,7,1,1,0,1707715629,"      shell: nohup /root/tomcat/bin/startup.sh"
+"8	LINE	0
+	        - nginx
+|3,0,8,1,1,0,1707708891,"        - nginx"
+"9	LINE	0
+	        - httpd
+|3,0,9,1,1,0,1707708598,"        - httpd"
+"-	CHAR	0
+	7
+|3,0,36,0,1,0,1707715005,"7"
 
 # File marks:
-'0  11  0  ~/contion.yml
-|4,48,11,0,1707711784,"~/contion.yml"
-'1  11  16  ~/user.yml
-|4,49,11,16,1707710722,"~/user.yml"
-'2  11  12  ~/user.yml
-|4,50,11,12,1707710626,"~/user.yml"
-'3  7  5  ~/user.yml
-|4,51,7,5,1707710410,"~/user.yml"
-'4  7  5  ~/user.yml
-|4,52,7,5,1707710410,"~/user.yml"
-'5  7  5  ~/user.yml
-|4,53,7,5,1707710410,"~/user.yml"
-'6  7  5  ~/user.yml
-|4,54,7,5,1707710410,"~/user.yml"
-'7  5  7  ~/user.yml
-|4,55,5,7,1707710384,"~/user.yml"
-'8  5  7  ~/user.yml
-|4,56,5,7,1707710384,"~/user.yml"
-'9  5  7  ~/user.yml
-|4,57,5,7,1707710384,"~/user.yml"
+'0  20  14  ~/appserver.yml
+|4,48,20,14,1707718641,"~/appserver.yml"
+'1  10  13  ~/appserver.yml
+|4,49,10,13,1707716478,"~/appserver.yml"
+'2  10  13  ~/appserver.yml
+|4,50,10,13,1707716478,"~/appserver.yml"
+'3  23  31  ~/appserver.yml
+|4,51,23,31,1707716314,"~/appserver.yml"
+'4  23  31  ~/appserver.yml
+|4,52,23,31,1707716314,"~/appserver.yml"
+'5  22  31  ~/appserver.yml
+|4,53,22,31,1707716314,"~/appserver.yml"
+'6  22  31  ~/appserver.yml
+|4,54,22,31,1707716314,"~/appserver.yml"
+'7  23  31  ~/appserver.yml
+|4,55,23,31,1707716254,"~/appserver.yml"
+'8  23  31  ~/appserver.yml
+|4,56,23,31,1707716254,"~/appserver.yml"
+'9  22  31  ~/appserver.yml
+|4,57,22,31,1707716254,"~/appserver.yml"
 
 # Jumplist (newest first):
--'  11  0  ~/contion.yml
-|4,39,11,0,1707711784,"~/contion.yml"
--'  1  0  ~/contion.yml
-|4,39,1,0,1707711506,"~/contion.yml"
--'  11  16  ~/user.yml
-|4,39,11,16,1707710722,"~/user.yml"
--'  11  16  ~/user.yml
-|4,39,11,16,1707710722,"~/user.yml"
--'  3  2  ~/user.yml
-|4,39,3,2,1707710677,"~/user.yml"
--'  3  2  ~/user.yml
-|4,39,3,2,1707710677,"~/user.yml"
--'  11  12  ~/user.yml
-|4,39,11,12,1707710626,"~/user.yml"
--'  11  12  ~/user.yml
-|4,39,11,12,1707710626,"~/user.yml"
--'  4  0  ~/user.yml
-|4,39,4,0,1707710530,"~/user.yml"
--'  7  16  ~/user.yml
-|4,39,7,16,1707710530,"~/user.yml"
--'  4  0  ~/user.yml
-|4,39,4,0,1707710530,"~/user.yml"
--'  7  16  ~/user.yml
-|4,39,7,16,1707710530,"~/user.yml"
--'  4  0  ~/user.yml
-|4,39,4,0,1707710530,"~/user.yml"
--'  7  16  ~/user.yml
-|4,39,7,16,1707710530,"~/user.yml"
--'  4  0  ~/user.yml
-|4,39,4,0,1707710530,"~/user.yml"
--'  7  16  ~/user.yml
-|4,39,7,16,1707710530,"~/user.yml"
--'  7  5  ~/user.yml
-|4,39,7,5,1707710410,"~/user.yml"
--'  7  5  ~/user.yml
-|4,39,7,5,1707710410,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710402,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710402,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710402,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710402,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710402,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710402,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710384,"~/user.yml"
--'  5  7  ~/user.yml
-|4,39,5,7,1707710384,"~/user.yml"
--'  7  33  ~/user.yml
-|4,39,7,33,1707710342,"~/user.yml"
--'  7  33  ~/user.yml
-|4,39,7,33,1707710342,"~/user.yml"
--'  7  33  ~/user.yml
-|4,39,7,33,1707710322,"~/user.yml"
--'  7  33  ~/user.yml
-|4,39,7,33,1707710322,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  1  0  ~/user.yml
-|4,39,1,0,1707710216,"~/user.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
--'  15  6  ~/loop.yml
-|4,39,15,6,1707709644,"~/loop.yml"
+-'  20  14  ~/appserver.yml
+|4,39,20,14,1707718641,"~/appserver.yml"
+-'  10  13  ~/appserver.yml
+|4,39,10,13,1707718603,"~/appserver.yml"
+-'  10  13  ~/appserver.yml
+|4,39,10,13,1707716478,"~/appserver.yml"
+-'  2  11  ~/appserver.yml
+|4,39,2,11,1707716441,"~/appserver.yml"
+-'  2  11  ~/appserver.yml
+|4,39,2,11,1707716441,"~/appserver.yml"
+-'  1  0  ~/appserver.yml
+|4,39,1,0,1707716425,"~/appserver.yml"
+-'  1  0  ~/appserver.yml
+|4,39,1,0,1707716425,"~/appserver.yml"
+-'  23  31  ~/appserver.yml
+|4,39,23,31,1707716416,"~/appserver.yml"
+-'  22  31  ~/appserver.yml
+|4,39,22,31,1707716416,"~/appserver.yml"
+-'  22  31  ~/appserver.yml
+|4,39,22,31,1707716314,"~/appserver.yml"
+-'  22  31  ~/appserver.yml
+|4,39,22,31,1707716254,"~/appserver.yml"
+-'  22  0  ~/appserver.yml
+|4,39,22,0,1707716212,"~/appserver.yml"
+-'  21  0  ~/appserver.yml
+|4,39,21,0,1707716212,"~/appserver.yml"
+-'  21  0  ~/appserver.yml
+|4,39,21,0,1707716212,"~/appserver.yml"
+-'  21  0  ~/appserver.yml
+|4,39,21,0,1707716212,"~/appserver.yml"
+-'  21  0  ~/appserver.yml
+|4,39,21,0,1707715974,"~/appserver.yml"
+-'  21  0  ~/appserver.yml
+|4,39,21,0,1707715886,"~/appserver.yml"
+-'  38  6  ~/appserver.yml
+|4,39,38,6,1707715822,"~/appserver.yml"
+-'  37  6  ~/appserver.yml
+|4,39,37,6,1707715822,"~/appserver.yml"
+-'  37  6  ~/appserver.yml
+|4,39,37,6,1707715822,"~/appserver.yml"
+-'  37  6  ~/appserver.yml
+|4,39,37,6,1707715822,"~/appserver.yml"
+-'  37  6  ~/appserver.yml
+|4,39,37,6,1707715822,"~/appserver.yml"
+-'  37  6  ~/appserver.yml
+|4,39,37,6,1707715822,"~/appserver.yml"
+-'  36  6  ~/appserver.yml
+|4,39,36,6,1707715778,"~/appserver.yml"
+-'  35  6  ~/appserver.yml
+|4,39,35,6,1707715778,"~/appserver.yml"
+-'  35  6  ~/appserver.yml
+|4,39,35,6,1707715778,"~/appserver.yml"
+-'  35  6  ~/appserver.yml
+|4,39,35,6,1707715778,"~/appserver.yml"
+-'  35  6  ~/appserver.yml
+|4,39,35,6,1707715778,"~/appserver.yml"
+-'  35  6  ~/appserver.yml
+|4,39,35,6,1707715778,"~/appserver.yml"
+-'  37  3  ~/appserver.yml
+|4,39,37,3,1707715768,"~/appserver.yml"
+-'  35  3  ~/appserver.yml
+|4,39,35,3,1707715768,"~/appserver.yml"
+-'  36  3  ~/appserver.yml
+|4,39,36,3,1707715768,"~/appserver.yml"
+-'  34  3  ~/appserver.yml
+|4,39,34,3,1707715768,"~/appserver.yml"
+-'  36  3  ~/appserver.yml
+|4,39,36,3,1707715768,"~/appserver.yml"
+-'  34  3  ~/appserver.yml
+|4,39,34,3,1707715768,"~/appserver.yml"
+-'  36  3  ~/appserver.yml
+|4,39,36,3,1707715768,"~/appserver.yml"
+-'  34  3  ~/appserver.yml
+|4,39,34,3,1707715768,"~/appserver.yml"
+-'  36  3  ~/appserver.yml
+|4,39,36,3,1707715768,"~/appserver.yml"
+-'  34  3  ~/appserver.yml
+|4,39,34,3,1707715768,"~/appserver.yml"
+-'  36  3  ~/appserver.yml
+|4,39,36,3,1707715768,"~/appserver.yml"
+-'  34  3  ~/appserver.yml
+|4,39,34,3,1707715768,"~/appserver.yml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
+-'  58  79  ~/tomcat-users.xml
+|4,39,58,79,1707715710,"~/tomcat-users.xml"
 
 # History of marks within files (newest to oldest):
+
+> ~/appserver.yml
+	*	1707718638	0
+	"	20	14
+	^	20	15
+	.	20	14
+	+	7	59
+	+	6	34
+	+	11	95
+	+	32	0
+	+	24	0
+	+	19	46
+	+	24	17
+	+	24	32
+	+	26	65
+	+	28	44
+	+	31	64
+	+	30	25
+	+	31	45
+	+	35	45
+	+	34	17
+	+	34	0
+	+	35	0
+	+	34	16
+	+	35	47
+	+	38	45
+	+	37	29
+	+	24	0
+	+	23	0
+	+	37	4
+	+	22	0
+	+	23	32
+	+	2	12
+	+	20	14
+
+> ~/tomcat-users.xml
+	*	1707715708	0
+	"	58	79
+	^	58	80
+	.	58	79
+	+	56	26
+	+	57	32
+	+	58	79
+	a	56	18
+
+> ~/context.xml
+	*	1707715013	0
+	"	22	17
+	^	22	18
+	.	22	17
+	+	22	17
+
+> ~/jenkins.yml
+	*	1707713548	0
+	"	24	31
+	^	24	32
+	.	24	32
+	+	12	64
+	+	13	45
+	+	21	36
+	+	15	0
+	+	16	0
+	+	15	5
+	+	17	71
+	+	20	0
+	+	24	5
+	+	23	3
+	+	24	36
+	+	24	32
 
 > ~/contion.yml
 	*	1707711781	0
