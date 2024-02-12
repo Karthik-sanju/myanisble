@@ -1,0 +1,15 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: install multiple tasks using loops
+      yum: name={{item}} state=present
+      with_items:
+        - git
+        - maven
+        - tree
+        - httpd
+
+    - name: start the service 
+      service: name=httpd state=started

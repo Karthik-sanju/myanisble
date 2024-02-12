@@ -1,0 +1,11 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+   - name: user add to the slave server
+     group: name={{item}} state=present
+     with_items:
+       - tcs
+       - infosys
+       - infotech 
