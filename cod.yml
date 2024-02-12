@@ -1,0 +1,10 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: code from github
+      git:
+        repo: "https://github.com/Karthik-sanju/management.git"
+        version: "main"
+        dest: "my-code"
