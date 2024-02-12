@@ -1,0 +1,13 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: install git 
+      yum: name=git state=present
+
+    - name: code from github
+      git:
+        repo: "https://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@github.com/Karthik-sanju/gitplural.git"
+          #branching    version: "main"
+        dest: "github-code"
