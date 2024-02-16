@@ -1,0 +1,11 @@
+---
+- hosts: dev
+  connection: ssh
+
+  tasks:
+    - debug:
+        msg: "slave server working on {{ansible_os_family}} os"
+
+    - debug:
+        msg: "slave server devices are {{ansible_devices}}"
+

@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: INSTALL VIM-COMMON
+      raw: name=vim-commom state=present
+
