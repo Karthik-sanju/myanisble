@@ -1,0 +1,9 @@
+---
+- hosts: dev
+  connection: ssh
+
+
+  roles:
+    - kanna
+
+
