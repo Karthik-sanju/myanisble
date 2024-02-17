@@ -1,0 +1,44 @@
+---
+- hosts: dev
+  connection: ssh
+
+  tasks:
+    - name: install git
+      yum: name=git state=present
+
+    - name: check package
+      command: git -v
+         #command: cat /etc/passwd
+      register: abc
+       
+
+    - debug:
+        msg: "Git version is {{abc.stdout}} "
+
+          #- debug:
+          #msg: "the list of users are  {bcd.stdout}   "      
+
+    - debug:
+        msg: "slave server working on {{ansible_os_family}} os"
+
+    - debug:
+        msg: "slave server devices are {{ansible_devices}}"
+          
+    - debug:
+        msg: "slave server  memory total  info is  {{ansible_memory_mb.real.total}}"
+
+    - debug:
+        msg: "slave server memory used info is {{ansible_memory_mb.real.used}}"
+
+    - debug:
+        msg: "slave server processor cores are {{ansible_processor_cores}}"
+
+    - debug:
+        msg: "slave server kernel version  are {{ansible_kernel}}"
+
+    - debug:
+        msg: "slave server ip mac address {{ansible_default_ipv4}}"
+
+    - debug:
+        msg: "slave server architecture  are {{ansible_architecture}}"
+
