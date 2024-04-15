@@ -23,7 +23,7 @@
     - name: copy the context.txt
       copy:
         src: "context.xml"
-        dest: "/root/tomcat/webapps/manager/META_INF/context.xml"
+        dest: "/root/tomcat/webapps/manager/META-INF/context.xml"
 
     - name: replcae the tomcat-user.xml file
       copy:
