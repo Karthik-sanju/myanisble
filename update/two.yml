@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: localhost
   connection: ssh
   tasks:
     - include: one.yml
