@@ -19,13 +19,45 @@
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>YouTube Link</title>
+                <title>Sample HTML Page</title>
+                <style>
+                    /* Add CSS styling here */
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f0f0f0;
+                    }
+                    .container {
+                        max-width: 800px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                    }
+                    h1 {
+                        color: #333;
+                    }
+                    p {
+                        color: #666;
+                    }
+                    .youtube-video {
+                        margin-bottom: 20px;
+                    }
+                </style>
             </head>
             <body>
-                <h1> this is ansible notes </h1>
-                <h1>Watch this video on YouTube:</h1>
-                <a href="https://youtu.be/U1F6qfULoQ8?si=3HvomowiYKvABsK9">Click here</a>
+                <div class="container">
+                    <h1>Welcome to My Website!</h1>
+                    <p>Check out this cool video:</p>
+                    <div class="youtube-video">
+                        <iframe width="560" height="315" src="https://youtu.be/U1F6qfULoQ8?si=AKjgTGy6PuSSGp2F" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>This is some sample text. Feel free to replace it with your own content!</p>
+                </div>
             </body>
             </html>
-
-
+            
+            
+            
