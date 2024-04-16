@@ -15,17 +15,17 @@
         dest: /var/www/html/index.html
         content: |
            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Link</title>
-</head>
-<body>
-    <h1> this is ansible notes </h1>
-    <h1>Watch this video on YouTube:</h1>
-    <a href="https://youtu.be/U1F6qfULoQ8?si=3HvomowiYKvABsK9">Click here</a>
-</body>
-</html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>YouTube Link</title>
+            </head>
+            <body>
+                <h1> this is ansible notes </h1>
+                <h1>Watch this video on YouTube:</h1>
+                <a href="https://youtu.be/U1F6qfULoQ8?si=3HvomowiYKvABsK9">Click here</a>
+            </body>
+            </html>
 
 
