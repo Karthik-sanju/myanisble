@@ -1,0 +1,9 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: creting file
+      file:
+        path: "karthik"
+        state: touch

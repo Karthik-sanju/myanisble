@@ -1,0 +1,12 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: insert data ina file
+      copy:
+        dest: /root/karthik
+        content: |
+          Hi everyone 
+          this is karthik
+          it is ansible note

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: creting folder
+      file:
+        path: "karthik.txt"
+        state: touch
+        mode: 777

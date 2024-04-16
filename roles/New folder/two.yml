@@ -1,0 +1,7 @@
+---
+- hosts: dev
+  connection: ssh
+  tasks:
+    - include: one.yml
+    - name: git install
+      service: name='{{abc}}' state=restarted

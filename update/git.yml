@@ -1,0 +1,18 @@
+---
+- hosts: all
+  connection: ssh
+
+  vars:
+    abc: git
+    xyz: maven 
+    java: java-17
+
+  tasks:
+    - name: install git  sevder
+      yum : name={{abc}} state=present
+
+    - name: getting code from git
+      git:
+        repo: "https://github.com/jaiswaladi246/Boardgame.git"
+        dest: "/root/mycode"
+

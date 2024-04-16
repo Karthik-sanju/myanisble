@@ -1,0 +1,5 @@
+---
+- set_fact: abc=httpd
+- name: apache maven
+  yum: name=httpd state=present
+

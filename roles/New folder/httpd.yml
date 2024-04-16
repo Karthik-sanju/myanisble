@@ -1,0 +1,18 @@
+---
+- hosts: all
+  connection: ssh
+  tasks:
+    - name: install httpd
+      yum: name=httpd state=present
+    - name: restart httpd
+      service: name=httpd state=restarted
+    - name: creating a file
+      file:
+        dest: /var/www/html/index.html
+        state: touch
+    - name: adding the data to a file
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <h1> this is ansible notes </h1>
+

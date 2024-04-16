@@ -1,0 +1,9 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: creting folder
+      file:
+        path: "folder/karthik"
+        state: directory

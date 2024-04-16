@@ -1,0 +1,7 @@
+---
+- hosts: all
+  connection: ssh
+
+  tasks:
+    - name: create users
+      group: name="kathik" state=present
