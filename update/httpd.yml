@@ -15,7 +15,7 @@
         dest: /var/www/html/index.html
         content: |
            <!DOCTYPE html>
-            <html lang="en">
+           <html lang="en">
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,12 +52,9 @@
                     <h1>Welcome to My Website!</h1>
                     <p>Check out this cool video:</p>
                     <div class="youtube-video">
-                        <iframe width="560" height="315" src="https://youtu.be/U1F6qfULoQ8?si=hh0ObjrguBS6lSIz" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U1F6qfULoQ8" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <p>This is some sample text. Feel free to replace it with your own content!</p>
                 </div>
             </body>
             </html>
-            
-            
-            
