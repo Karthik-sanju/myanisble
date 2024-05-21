@@ -55,5 +55,5 @@ The users below are wrapped in a comment and are therefore ignored. If you
 -->
   <role rolename="manager-gui"/>
   <role rolename="manager-script"/>
-  <user username="tomcat" password="admin@123>" roles="manager-gui,manager-script"/>
+  <user username="tomcat" password="admin@123" roles="manager-gui,manager-script"/>
 </tomcat-users>
